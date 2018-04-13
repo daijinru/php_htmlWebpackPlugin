@@ -1,0 +1,2 @@
+webpackJsonp([2],{70:function(e,l){},96:function(e,l,o){"use strict";Object.defineProperty(l,"__esModule",{value:!0});var n=o(70);o.n(n);window.hello="hello less",l.default="hello less"}},[96]);
+//# sourceMappingURL=less.js.map?8c09248dcd6332671c1e

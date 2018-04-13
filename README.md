@@ -10,10 +10,10 @@ public
   |_static
     |_css
         |_*.css
-      |_js
+    |_js
         |_*.js
-          |_verdor.js
-          |_manifest.js
+        |_verdor.js
+        |_manifest.js
 resource
   |_view
     |_*.php
@@ -28,7 +28,7 @@ src
   |_assets
     |_css
         |_*.css
-      |_js
+    |_js
         |_*.js
   |_*.html // 模版文件
 ```
@@ -94,8 +94,8 @@ WebpackPlugins = WebpackPlugins.concat(TEMPLATES.map(item => {
   return new HtmlWebpackPlugin(item)
 }))
 module.exports = () => {
-	// ... 其它配置
-	plugins: WebpackPlugins
+  // ... 其它配置
+  plugins: WebpackPlugins
 }
 ```	
 
@@ -131,22 +131,22 @@ module.exports = () => {
 ```
 // webpack.config.js
 module.exports = () => {
-	module: {
-		rules: [{
-        test: /\.css$/,
+  module: {
+    rules: [{
+      test: /\.css$/,
         use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: 'css-loader'
+        fallback: 'style-loader',
+        use: 'css-loader'
         })
       },
       {
         test: /\.less$/,
         use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: ['css-loader', 'less-loader', 'postcss-loader']
-        })
-      }]
-	}
+        fallback: 'style-loader',
+        use: ['css-loader', 'less-loader', 'postcss-loader']
+      })
+    }]
+  }
 }
 ```
 

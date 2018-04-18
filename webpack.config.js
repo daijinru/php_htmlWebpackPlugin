@@ -83,6 +83,12 @@ module.exports = (options = {}) => ({
             limit: 10000
           }
         }]
+      },
+      {
+        test: /\.(vue|js)$/,
+        loader: 'eslint-loader',
+        exclude: /node_modules/,
+        enforce: 'pre'
       }
     ]
   },
